@@ -23,7 +23,7 @@ This endpoint returns all of the players and their corresponding number of wins.
 ```bash
 https://github.com/Chomama/war.git
 cd war
-
+./gradlew build
 ```
 
 ## Testing
