@@ -19,12 +19,14 @@ eg) http://localhost:8080/getPlayerWins?playerId=playerOne
 This endpoint returns all of the players and their corresponding number of wins.
 
 ## Installation 
+The app requires Java 17 to run. 
 
 ```bash
 https://github.com/Chomama/war.git
 cd war
 ./gradlew build
 ```
+Once installed, open ./src/main/resources/application.properties and fill in the password dataosource password.
 
 ## Testing
 
@@ -34,8 +36,7 @@ cd war
 
 ```
 
-
-**Start the application on localhost:8080/**
+## Start the application on localhost:8080
 
 ```
 ./gradlew run
