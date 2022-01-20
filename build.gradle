@@ -1,0 +1,37 @@
+plugins {
+	id 'org.springframework.boot' version '2.6.2'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id "com.adarshr.test-logger" version "3.1.0"
+	id 'java'
+	id 'application'
+}
+
+group = 'com.ryan'
+version = '1.0.0-SNAPSHOT'
+mainClassName = 'com.ryan.war.WarApplication'
+sourceCompatibility = 1.17
+targetCompatibility = 1.17
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'mysql:mysql-connector-java:5.1.44'
+	implementation 'org.projectlombok:lombok:1.18.22'
+	implementation 'junit:junit:4.12'
+	annotationProcessor 'org.projectlombok:lombok:1.18.22'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation("org.assertj:assertj-core:3.11.1")
+}
+
+test {
+	useJUnitPlatform()
+}
+
+testlogger {
+	theme 'mocha'
+}
