@@ -22,23 +22,30 @@ public class PlayerRepositoryTests {
     private PlayerRepository playerRepository;
 
     @Test
-    public void savePlayer() {
+    public void testSavePlayer() {
         Player testPlayer = new Player("testPlayer", 0, null, null);
         Player savedPlayer = playerRepository.save(testPlayer);
         assertThat(savedPlayer).isNotNull();
     }
 
     @Test
-    public void getAllPLayers() {
+    public void testGetAllPLayers() {
         List<Player> players = playerRepository.findAll();
         assertThat(players).hasSize(2);
     }
 
     @Test
-    public void getPlayerById() {
+    public void testGetPlayerById() {
         Player player = playerRepository.findByPlayerId("playerOne");
         assertThat(player.getPlayerId()).isEqualTo("playerOne");
     }
+
+    @Test
+    public void testGetPlayerWins() {
+        int wins = playerRepository.getPlayerWins("playerOne");
+        assertThat(wins).isNotNull();
+    }
+
 
 
 

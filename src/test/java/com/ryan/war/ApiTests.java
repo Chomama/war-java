@@ -10,6 +10,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 
@@ -25,20 +26,17 @@ public class ApiTests {
     private WarGame warGame;
 
     @Test
-    void getPlayer() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.get("/getPlayer")
+    void testGetPlayerWins() throws Exception {
+        mockMvc.perform(MockMvcRequestBuilders.get("/getPlayerWins")
                 .queryParam("playerId", "playerOne"))
                 .andExpect(status().isOk());
     }
 
     @Test
-    void getAllPlayerWins() throws Exception {
+    void testGetAllPlayerWins() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get("/getAllPlayerWins"))
                 .andExpect(status().isOk());
     }
-
-
-
 
 
 }

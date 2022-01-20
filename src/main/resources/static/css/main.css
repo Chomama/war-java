@@ -1,0 +1,20 @@
+html{
+  background-color: goldenrod;
+ }
+
+.main {
+  text-align: center;
+  display: block
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  font-size: 60px;
+}
+
+#startButton {
+  height: 80px;
+  width: 300px;
+  margin: 20px;
+}

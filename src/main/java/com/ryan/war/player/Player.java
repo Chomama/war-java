@@ -19,10 +19,13 @@ import java.util.List;
 public class Player {
     @Id
     private String playerId;
+
     @Column(name="wins")
     private int wins;
+
     @Transient
     private LinkedList<Card> deck;
+
     @Transient
     private Card currentCard;
 

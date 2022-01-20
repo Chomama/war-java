@@ -19,7 +19,6 @@ public class WarGame {
     @Autowired
     private PlayerRepository playerRepository;
 
-
     public Player startGame() throws Exception {
         //creates a dealer and populates the deck
         Dealer dealer = new Dealer();

@@ -22,24 +22,18 @@ public class WarController{
     private WarGame warGame;
 
     @GetMapping(value = "/start")
-    public @ResponseBody String startGame() throws Exception {
+    public String startGame() throws Exception {
         Player winner = warGame.startGame();
         return String.format("Game has finished and the winner is %s!", winner.getPlayerId());
     }
 
-    @GetMapping(value = "/getPlayer")
-    public @ResponseBody Player getPlayer(String playerId) {
-        return repository.findByPlayerId(playerId);
-    }
-
     @GetMapping(value = "/getPlayerWins")
-    public @ResponseBody int getPlayerWins(String playerId) {
-        Player player =  repository.findByPlayerId(playerId);
-        return player.getWins();
+    public int getPlayerWins(String playerId) {
+        return repository.getPlayerWins(playerId);
     }
 
     @GetMapping(value = "/getAllPlayerWins")
-    public @ResponseBody Map<String, Integer> getAllPlayerWins() {
+    public Map<String, Integer> getAllPlayerWins() {
         List<Player> players = repository.findAll();
         Map<String, Integer> playerWins = new HashMap<>();
         players.stream().forEach(p -> {
