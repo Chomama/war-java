@@ -7,7 +7,7 @@ This project runs the card game war and is written with Java, Spring, and connec
 
 **/start**
 
-The start endpoint starts the game and will return the results.  The game is capped at 300 rounds as to prevent infinite runs.  
+The start endpoint starts the game and will return the results. 
 
 **/getPlayerWins**
 
