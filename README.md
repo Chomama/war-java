@@ -25,6 +25,7 @@ https://github.com/Chomama/war.git
 cd war
 ./gradlew build
 ```
+Once installed, open ./src/main/resources/application.properties and fill in the password dataosource password.
 
 ## Testing
 
