@@ -19,7 +19,7 @@ eg) http://localhost:8080/getPlayerWins?playerId=playerOne
 This endpoint returns all of the players and their corresponding number of wins.
 
 ## Installation 
-The app runs on Java 17. 
+The app requires Java 17 to run. 
 
 ```bash
 https://github.com/Chomama/war.git
