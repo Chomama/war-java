@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title> WAR </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <H1 th:text="'THE GAME HAS FINSHED ' + ${playerId} + 'HAS WON THE GAME!'"></H1>
+    <button className='homeButton' onclick="location.href='/'" type="button"> Go Home </button>
+
+</body>
+</html>

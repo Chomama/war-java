@@ -1,7 +1,7 @@
 package com.ryan.war;
 
 import com.ryan.war.player.Player;
-import com.ryan.war.player.query.PlayerRepository;
+import com.ryan.war.player.PlayerRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

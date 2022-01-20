@@ -1,4 +1,4 @@
-package com.ryan.war.player.query;
+package com.ryan.war.player;
 
 import com.ryan.war.player.Player;
 import org.springframework.data.jpa.repository.JpaRepository;

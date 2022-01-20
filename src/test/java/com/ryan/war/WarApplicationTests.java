@@ -1,8 +1,8 @@
 package com.ryan.war;
 
-import com.ryan.war.api.WarController;
+import com.ryan.war.controller.WarController;
 import com.ryan.war.game.WarGame;
-import com.ryan.war.player.query.PlayerRepository;
+import com.ryan.war.player.PlayerRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title> ScoreBoard </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<H1 th:text="'Player One has ' + ${playerWins.get('playerOne')} + ' lifetime wins.'"></H1>
+<H1 th:text="'Player Two has ' + ${playerWins.get('playerTwo')} + ' lifetime wins.'"></H1>
+<button className='homeButton' onclick="location.href='/'" type="button"> Go Home </button>
+
+</body>
+</html>

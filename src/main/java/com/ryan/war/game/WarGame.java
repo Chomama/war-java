@@ -3,7 +3,7 @@ package com.ryan.war.game;
 import com.ryan.war.game.cards.Card;
 import com.ryan.war.game.cards.Dealer;
 import com.ryan.war.player.Player;
-import com.ryan.war.player.query.PlayerRepository;
+import com.ryan.war.player.PlayerRepository;
 import lombok.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
