@@ -37,3 +37,4 @@ test {
 testlogger {
 	theme 'mocha'
 }
+
