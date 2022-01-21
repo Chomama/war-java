@@ -1,6 +1,6 @@
 # WAR
 
-This project runs the card game War (based on the rules described [here](https://bicyclecards.com/how-to-play/war/)).  This project was aimed to create a RESTful service with two endpoints - one to start the game with two simulated players and an endpoint to get lifetime wins for each player.  
+This project runs the card game War (based on the rules described [here](https://bicyclecards.com/how-to-play/war/)).  This project was aimed to create a RESTful service with two endpoints - one to start the game with two simulated players and an endpoint to get lifetime wins for each player. A simple UI is running on the root URL with buttons to call each of these endpoints.
 
 
 ## Features
