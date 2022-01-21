@@ -2,21 +2,27 @@
 
 This project runs the card game War (based on the rules described [here](https://bicyclecards.com/how-to-play/war/)) and is written with Java, Spring, and connects to a MySql database deployed on AWS.  
 
-Thymeleaf is leveraged for a simple template based UI. 
 
-The homepage runs on the root url (localhost:8080).
+## Features
+* Java 17
+* SpringBoot
+* Spring Data JPA
+* ThymeLeaf
+* Gradle 7.3.3
+* Docker
+* MySQL
 
-## Run with Docker
+
+# To Run with Docker
 
 ```bash
 docker pull chomama/war-docker:version1
 docker run --publish 8080:8080 chomama/war-docker:version1
 ```
-The app will be running on localhost:8080. 
+The homepage will be running on localhost:8080. 
 
 
-## Installation 
-The app requires Java 17 to run. 
+# Installation 
 
 ```bash
 https://github.com/Chomama/war-java.git
@@ -31,7 +37,7 @@ Once installed, open ./src/main/resources/application.properties and fill in the
 ./gradlew test
 ```
 
-## Start the application on localhost:8080
+## Run 
 
 ```bash
 ./gradlew run
