@@ -29,6 +29,7 @@ public class Player {
     @Transient
     private Card currentCard;
 
+    //takes a card from front of the deck and sets it as currentCard
     public Card drawCard() {
         if(deck.size() == 0) {
             return null;
@@ -37,22 +38,14 @@ public class Player {
         return currentCard;
     }
 
+    //adds the cards to back of the deck
     public void addCards(List<Card> cards) {
         deck.addAll(cards);
     }
 
+    //adds to the lifetime wins of the player
     public void addWin() {
         this.wins++;
     }
-
-    public String printDeck() {
-        StringBuilder string = new StringBuilder();
-        this.deck.stream().forEach(card -> {
-            string.append(card.toString() + ", ");
-        });
-        return string.toString();
-    }
-
-
 
 }

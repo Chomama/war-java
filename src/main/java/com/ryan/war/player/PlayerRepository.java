@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 
 public interface PlayerRepository extends JpaRepository<Player, String> {
 
-    Player findByPlayerId(String playerId);
+    Player getByPlayerId(String playerId);
 
     @Query(value = "SELECT wins FROM Player WHERE playerId = ?1", nativeQuery = true)
     int getPlayerWins(String playerId);

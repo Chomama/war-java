@@ -21,6 +21,7 @@ public class Dealer {
         populateDeck();
     }
 
+    //creates the deck
     public void populateDeck() {
         for(Suit s : Suit.values()) {
             for(Rank r : Rank.values()) {
@@ -30,11 +31,13 @@ public class Dealer {
         }
     }
 
+    //distributes half of the deck to each player
     public void dealCards(Player playerOne, Player playerTwo) {
         playerOne.setDeck(this.cards.subList(0, 26).stream().collect(Collectors.toCollection(LinkedList::new)));
         playerTwo.setDeck(this.cards.subList(26, 52).stream().collect(Collectors.toCollection(LinkedList::new)));
     }
 
+    //shuffles the deck
     public void shuffle() {
         Collections.shuffle(this.cards);
     }

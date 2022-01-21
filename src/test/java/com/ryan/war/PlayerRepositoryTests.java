@@ -36,7 +36,7 @@ public class PlayerRepositoryTests {
 
     @Test
     public void testGetPlayerById() {
-        Player player = playerRepository.findByPlayerId("playerOne");
+        Player player = playerRepository.getByPlayerId("playerOne");
         assertThat(player.getPlayerId()).isEqualTo("playerOne");
     }
 
