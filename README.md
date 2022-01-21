@@ -5,11 +5,10 @@ This project runs the card game War (based on the rules described [here](https:/
 
 ## Features
 * Java 17
-* SpringBoot
+* Spring Boot
 * Spring Data JPA
 * ThymeLeaf
 * Gradle 7.3.3
-* Docker
 * MySQL
 
 
