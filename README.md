@@ -17,9 +17,8 @@ The app will be running on localhost:8080.
 The app requires Java 17 to run. 
 
 ```bash
-https://github.com/Chomama/war.git
-cd war
-./gradlew build
+https://github.com/Chomama/war-java.git
+cd war-java
 ```
 
 Once installed, open ./src/main/resources/application.properties and fill in the password dataosource password.
