@@ -26,16 +26,13 @@ Once installed, open ./src/main/resources/application.properties and fill in the
 ## Testing
 
 ```bash
-
 ./gradlew test
-
 ```
 
 ## Start the application on localhost:8080
 
-```
+```bash
 ./gradlew run
-
 ```
 
 ## API's
