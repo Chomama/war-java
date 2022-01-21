@@ -27,7 +27,7 @@ https://github.com/Chomama/war-java.git
 cd war-java
 ```
 
-Once installed, open ./src/main/resources/application.properties and fill in the password datasource password.
+Once installed, open ./src/main/resources/application.properties and fill in the datasource password.
 
 ## Testing
 
