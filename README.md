@@ -1,11 +1,51 @@
 # WAR
 
-This project runs the card game war and is written with Java, Spring, and connects to a MySql database deployed on AWS.
+This project runs the card game War (based on the rules described [here](https://bicyclecards.com/how-to-play/war/)).  This project was aimed to create a RESTful service with two endpoints - one to start the game with two simulated players and an endpoint to get lifetime wins for each player.  
 
+
+## Features
+* Java 17
+* SpringBoot
+* Spring Data JPA
+* ThymeLeaf
+* Gradle 7.3.3
+* Docker
+* MySQL
+
+
+# To Run with Docker
+
+```bash
+docker pull chomama/war-docker:version1
+docker run --publish 8080:8080 chomama/war-docker:version1
+```
+The homepage will be running on localhost:8080. 
+
+
+# Installation 
+
+```bash
+https://github.com/Chomama/war-java.git
+cd war-java
+```
+
+Once installed, open ./src/main/resources/application.properties and fill in the password datasource password.
+
+## Testing
+
+```bash
+./gradlew test
+```
+
+## Run 
+
+```bash
+./gradlew run
+```
 
 ## API's
 
-**/start**
+**/startGame**
 
 The start endpoint starts the game and will return the results. 
 
@@ -17,29 +57,4 @@ eg) http://localhost:8080/getPlayerWins?playerId=playerOne
 **/getAllPlayerWins**
 
 This endpoint returns all of the players and their corresponding number of wins.
-
-## Installation 
-The app requires Java 17 to run. 
-
-```bash
-https://github.com/Chomama/war.git
-cd war
-./gradlew build
-```
-Once installed, open ./src/main/resources/application.properties and fill in the password dataosource password.
-
-## Testing
-
-```bash
-
-./gradlew test
-
-```
-
-## Start the application on localhost:8080
-
-```
-./gradlew run
-
-```
 
