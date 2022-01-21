@@ -1,7 +1,9 @@
 # WAR
 
-This project runs the card game war and is written with Java, Spring, and connects to a MySql database deployed on AWS.
+This project runs the card game War (based on the rules described [here](https://bicyclecards.com/how-to-play/war/)) and is written with Java, Spring, and connects to a MySql database deployed on AWS.  
+
 Thymeleaf is leveraged for a simple template based UI. 
+
 The homepage runs on the root url (localhost:8080).
 
 ## Run with Docker
