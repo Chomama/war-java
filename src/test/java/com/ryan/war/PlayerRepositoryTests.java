@@ -46,6 +46,12 @@ public class PlayerRepositoryTests {
         assertThat(wins).isNotNull();
     }
 
+    @Test
+    public void testGetPlayerByIdInvalidId() {
+        Player player = playerRepository.getByPlayerId("1");
+        assertThat(player == null);
+    }
+
 
 
 
