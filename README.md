@@ -39,7 +39,7 @@ Once installed, open ./src/main/resources/application.properties and fill in the
 
 ## API's
 
-**/start**
+**/startGame**
 
 The start endpoint starts the game and will return the results. 
 
