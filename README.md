@@ -1,6 +1,6 @@
 # WAR
 
-This project runs the card game War (based on the rules described [here](https://bicyclecards.com/how-to-play/war/)) and is written with Java, Spring, and connects to a MySql database deployed on AWS.  
+This project runs the card game War (based on the rules described [here](https://bicyclecards.com/how-to-play/war/)).  This project was aimed to create a RESTful service with two endpoints - one to start the game with two simulated players and an endpoint to get lifetime wins for each player.  
 
 
 ## Features
