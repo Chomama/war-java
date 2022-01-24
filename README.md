@@ -8,7 +8,7 @@ This project runs the card game War (based on the rules described [here](https:/
 * Spring Data JPA
 * ThymeLeaf
 * Gradle 7.3.3
-* MySQL
+* MySQL (running on AWS RDS)
 
 
 # To Run with Docker
